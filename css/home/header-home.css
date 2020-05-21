@@ -1,0 +1,91 @@
+/* header */
+h1,
+nav ul a {
+  color: rgb(61, 158, 220);
+}
+header .blog-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px;
+  padding: 0px;
+}
+.blog-title-and-logo h1 {
+  align-self: center;
+  font-size: 1.5em;
+  white-space: nowrap;
+}
+.blog-title-and-logo,
+nav {
+  display: flex;
+}
+.blog-title-and-logo img {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  align-self: center;
+}
+nav {
+  align-self: center;
+  flex-direction: row-reverse;
+  padding-right: 20px;
+}
+nav ul a {
+  padding: 10px;
+  text-decoration: none;
+}
+.blog-image-header {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(/images/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2em;
+  background-attachment: fixed;
+}
+
+/* Media queries */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* Header */
+  header .blog-header {
+    grid-template-columns: 1fr;
+  }
+  nav,
+  .blog-title-and-logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-title-and-logo h1 {
+    margin-top: 2px;
+    margin-bottom: 35px;
+    font-size: 1.3em;
+  }
+  .blog-title-and-logo img {
+    margin-top: 3px;
+    margin-bottom: 0;
+    width: 35px;
+    height: 35px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  .blog-image-header {
+    text-align: center;
+    font-size: 1.7em;
+    padding: 0 15px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .blog-header nav ul a {
+    font-size: 90%;
+  }
+}

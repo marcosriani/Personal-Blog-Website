@@ -1,0 +1,22 @@
+/* Footer */
+footer {
+  margin: 10px 0 0;
+  display: grid;
+  grid-template-rows: 70px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 1em;
+}
+footer div a {
+  display: inline;
+}
+footer div {
+  margin: 0 auto;
+}
+footer div a img {
+  display: inline-block;
+  width: 25px;
+  padding: 0 5px;
+  margin-bottom: 15px;
+}

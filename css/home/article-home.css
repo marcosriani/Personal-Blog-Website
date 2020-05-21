@@ -1,0 +1,247 @@
+/* Cards */
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 0 1em;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-auto-rows: minmax(550px, auto);
+  text-align: center;
+  padding-right: 10px;
+}
+article .box {
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border: 1px solid rgb(229, 229, 229);
+}
+.box {
+  display: grid;
+  grid-template-rows: 210px 1fr;
+  text-align: center;
+}
+.box p {
+  text-align: justify;
+}
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+}
+
+.box-header:hover {
+  opacity: 0.6;
+  background-color: Black;
+  z-index: 10;
+}
+.box-header img:hover {
+  z-index: 5;
+}
+.box-header img {
+  width: 100%;
+  height: 100%;
+}
+.box-header a {
+  height: 100%;
+}
+
+.box-header figcaption {
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: auto;
+  font-size: 1em;
+  position: absolute;
+  right: 75%;
+  z-index: 100;
+}
+.box-content {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.box-content h2 {
+  text-align: center;
+  color: #20c596;
+  margin-bottom: 3px;
+}
+.box-content h3 {
+  margin: 0;
+  font-size: 1em;
+}
+.box-content button {
+  margin-bottom: 10px;
+}
+.box-content button {
+  font-size: 1em;
+}
+.form-box .submit-buttom {
+  color: white;
+}
+
+.box-content button:hover,
+.form-box .submit-buttom:hover {
+  background-color: #6efcd3;
+}
+blockquote {
+  margin: 3px;
+}
+blockquote footer {
+  color: rgb(128, 128, 128);
+}
+blockquote p {
+  color: rgb(85, 85, 85);
+}
+
+/* Aside */
+aside {
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border: 1px solid rgb(229, 229, 229);
+}
+.aside-title {
+  text-align: center;
+  color: rgb(61, 158, 220);
+  border-top: 1px solid rgb(249, 249, 249);
+  margin: 1em;
+}
+.aside-box {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: minmax(120px, auto);
+  align-items: center;
+  margin: 0 5px;
+  border-bottom: 1px solid rgb(249, 249, 249);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.aside-box-header img {
+  width: 100%;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  display: flex;
+}
+.aside-box-content {
+  padding: 8px;
+}
+.aside-box-content p {
+  padding: 4px;
+  margin-top: 4px;
+  color: rgb(85, 85, 85);
+}
+.aside-box-content h3 {
+  color: #20c596;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+/* Form */
+.form-box {
+  color: rgb(85, 85, 85);
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: 260px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.form-box .form-inbox {
+  padding: 5px 15px;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+.form-box h3 {
+  color: black;
+}
+.form-box input {
+  margin: 10px 0;
+}
+.form-message-box label {
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+.form-box input,
+.form-box textarea {
+  width: 95%;
+  border: 0.1px solid rgb(229, 229, 229);
+  padding: 5px;
+}
+.box-content button a {
+  text-decoration: none;
+  color: white;
+}
+
+.box-content button,
+.form-box .submit-buttom {
+  background-color: #20c596;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 30px;
+  border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  margin-top: 15px;
+}
+
+/* Media queries */
+
+/* Large desktop */
+@media (min-width: 1700) {
+  .box {
+    grid-template-rows: 2fr 1fr;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+    padding-right: 10px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  /* Article */
+
+  .wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 6px;
+  }
+  article {
+    grid-template-columns: 1fr;
+    padding-right: 0;
+  }
+
+  /* Aside */
+  .form-box input,
+  .form-box textarea {
+    border: 0.1px solid rgb(229, 229, 229);
+    padding: 5px;
+  }
+  .box {
+    grid-template-rows: 350px 1fr;
+  }
+  .box .box-header a {
+    width: 100%;
+  }
+  .box-content button {
+    width: 50%;
+    margin: 25px auto;
+    display: block;
+  }
+  .form-box .form-inbox {
+    padding: 5px;
+  }
+}

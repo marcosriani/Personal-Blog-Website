@@ -4,6 +4,7 @@
   grid-template-columns: 3fr 1fr;
   padding: 0 1em;
 }
+
 article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -12,20 +13,24 @@ article {
   text-align: center;
   padding-right: 10px;
 }
+
 article .box {
   border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   border: 1px solid rgb(229, 229, 229);
 }
+
 .box {
   display: grid;
   grid-template-rows: 210px 1fr;
   text-align: center;
 }
+
 .box p {
   text-align: justify;
 }
+
 .box-header {
   display: flex;
   align-items: center;
@@ -39,13 +44,16 @@ article .box {
   background-color: Black;
   z-index: 10;
 }
+
 .box-header img:hover {
   z-index: 5;
 }
+
 .box-header img {
   width: 100%;
   height: 100%;
 }
+
 .box-header a {
   height: 100%;
 }
@@ -60,6 +68,7 @@ article .box {
   right: 75%;
   z-index: 100;
 }
+
 .box-content {
   display: flex;
   flex-direction: column;
@@ -68,21 +77,26 @@ article .box {
   width: 80%;
   margin: auto;
 }
+
 .box-content h2 {
   text-align: center;
   color: #20c596;
   margin-bottom: 3px;
 }
+
 .box-content h3 {
   margin: 0;
   font-size: 1em;
 }
+
 .box-content button {
   margin-bottom: 10px;
 }
+
 .box-content button {
   font-size: 1em;
 }
+
 .form-box .submit-buttom {
   color: white;
 }
@@ -91,12 +105,15 @@ article .box {
 .form-box .submit-buttom:hover {
   background-color: #6efcd3;
 }
+
 blockquote {
   margin: 3px;
 }
+
 blockquote footer {
   color: rgb(128, 128, 128);
 }
+
 blockquote p {
   color: rgb(85, 85, 85);
 }
@@ -108,12 +125,14 @@ aside {
   -webkit-border-radius: 4px 4px 4px 4px;
   border: 1px solid rgb(229, 229, 229);
 }
+
 .aside-title {
   text-align: center;
   color: rgb(61, 158, 220);
   border-top: 1px solid rgb(249, 249, 249);
   margin: 1em;
 }
+
 .aside-box {
   display: grid;
   grid-template-columns: 110px 1fr;
@@ -124,6 +143,7 @@ aside {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .aside-box-header img {
   width: 100%;
   border-radius: 2px 2px 2px 2px;
@@ -131,14 +151,17 @@ aside {
   -webkit-border-radius: 2px 2px 2px 2px;
   display: flex;
 }
+
 .aside-box-content {
   padding: 8px;
 }
+
 .aside-box-content p {
   padding: 4px;
   margin-top: 4px;
   color: rgb(85, 85, 85);
 }
+
 .aside-box-content h3 {
   color: #20c596;
   font-size: 1em;
@@ -154,29 +177,35 @@ aside {
   justify-content: center;
   margin-bottom: 10px;
 }
+
 .form-box .form-inbox {
   padding: 5px 15px;
   border-radius: 3px 3px 3px 3px;
   -moz-border-radius: 3px 3px 3px 3px;
   -webkit-border-radius: 3px 3px 3px 3px;
 }
+
 .form-box h3 {
   color: black;
 }
+
 .form-box input {
   margin: 10px 0;
 }
+
 .form-message-box label {
   display: inline-block;
   margin-bottom: 4px;
   margin-top: 10px;
 }
+
 .form-box input,
 .form-box textarea {
   width: 95%;
   border: 0.1px solid rgb(229, 229, 229);
   padding: 5px;
 }
+
 .box-content button a {
   text-decoration: none;
   color: white;

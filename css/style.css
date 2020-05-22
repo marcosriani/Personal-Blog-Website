@@ -1,3 +1,7 @@
+@import '/css/home/header-home.css';
+@import '/css/home/article-home.css';
+@import '/css/footer.css';
+
 html,
 body {
   width: 100%;
